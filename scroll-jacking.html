@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fast.fonts.net/cssapi/14d45d46-de96-4365-bbdb-5b78d42a5f62.css">
+  </head>
+
+  <body>
+    <div class="nav"></div>
+    <div class="form"></div>
+    <div class="hero-image-container">
+      <div class="scrollable-container">
+      <div class="slide1">
+        <h1>Talk to a Calculus tutor in the next 5 minutes</h1>
+        <h3>Your first 30 minutes in a lesson are FREE! • Experienced tutors available 24/7</h3>
+        <div class="slide1-form"></div>
+      </div>
+      <div class="slide2">
+        <h1>Tell us what type of Calculus help you need</h1>
+        <h2>Cramming for an exam, catching up on homework or trying to boost your grades, we match you with qualified experts who can help solve your problem.</h2>
+      </div>
+      <div class="slide3">
+        <h1>Get matched in under 5 minutes and chat for free</h1>
+        <h2>We send your question to tutors from highly vetted universities and they reply back how they can help. Chat for free with tutors before your lesson to find the right fit.</h2>
+      </div>
+      <div class="slide4">
+        <h1>Choose your lesson type starting now, or later</h1>
+        <h2>Collaborate in a live lesson to share screens, talk over audio, video or chat. Or your tutor can work offline and deliver an explanation in a written lesson.</h2>
+        <h3>Try your first lesson free for 30 mins • Just 75&cent;/min after your free trial</h3>
+      </div>
+    </div>
+
+    <div class="laptop"></div>
+    </div>
+
+    <div class="remaining-content"></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+    (function($) {          
+        $(document).ready(function(){                    
+            $(".scrollable-container").scroll(function(){   
+                if ($(this).scrollTop() > 3300) {
+                    $('.laptop').css("background-image","url(assets/screen4-final.png)");
+                } else if ($(this).scrollTop() > 2200) {
+                    $('.laptop').css("background-image","url(assets/screen3-final.png)");
+                } else if ($(this).scrollTop() > 1100) {
+                    $('.laptop').css("background-image","url(assets/screen2-final.png)");
+                } else {
+                    $('.laptop').css("background-image","url(assets/screen1-final.png)");
+                }
+            });
+        });
+    })(jQuery);
+  </script>
+  <script type="text/javascript">
+    (function($) {          
+        $(document).ready(function(){                    
+            $(".scrollable-container").scroll(function(){   
+              // console.log("hello");
+                if ($(this).scrollTop() > 500) {
+                    $('.form').css("display","inherit");
+                } else {
+                    $('.form').css("display","none");
+                }
+            });
+        });
+    })(jQuery);
+  </script>
+  </body>
+
+
+</html>
